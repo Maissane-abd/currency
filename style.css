@@ -4,7 +4,7 @@
     --accent-color: #81c784;
     --text-color: #1b1b1b;
     --border-radius: 12px;
-    --font-main: 'Segoe UI', Roboto, sans-serif;
+    --font-main: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
     --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -13,13 +13,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+  
 body {
     font-family: var(--font-main);
     background-color: var(--bg-color);
     color: var(--text-color);
     padding: 2rem;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     min-height: 100vh;
