@@ -3,47 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Convertisseur</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- Titre affiché dans l'onglet du navigateur -->
     <title>Convertisseur de devises | Taux de change | ABDALLAH</title>
+
+    <!-- Favicon de l'application -->
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+
+    <!-- Feuille de style principale -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Intégration de la police Poppins via Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- Métadonnées pour le SEO -->
     <meta name="description" content="Convertisseur de devises en ligne rapide, fiable et mis à jour en temps réel.">
     <meta name="keywords" content="convertisseur, devises, taux de change, euro, dollar, yen, API, conversion temps réel">
     <meta name="author" content="Maïssane ABDALLAH">
 
+    <!-- Pour une meilleure compatibilité avec Internet Explorer -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Couleur de thème pour les navigateurs mobiles -->
     <meta name="theme-color" content="#2e7d32">
 
+    <!-- Balises Open Graph pour le partage sur les réseaux sociaux -->
     <meta property="og:title" content="Convertisseur de devises - Taux de change en temps réel">
     <meta property="og:description" content="Outil gratuit pour convertir rapidement des devises avec des taux mis à jour grâce à une API.">
 
+    <!-- Métadonnées Twitter (X) -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Convertisseur de devises">
     <meta name="twitter:description" content="Convertissez vos monnaies instantanément grâce à notre outil en ligne gratuit.">
 </head>
+
 <body>
-    <h1>Conversions de devises</h1>
+    <h1>Conversion de devises</h1>
+
+    <!-- Formulaire principal de conversion -->
     <form action="#">
 
+        <!-- Sélection de la devise source -->
         <label for="select-source">Devise source</label>
         <select name="select-source" id="select-source">
-            
+            <!-- Options ajoutées dynamiquement via JS -->
         </select>
 
+        <!-- Sélection de la devise cible -->
         <label for="select-devise">Devise cible</label>
         <select name="select-devise" id="select-devise">
-            
+            <!-- Options ajoutées dynamiquement via JS -->
         </select>
 
+        <!-- Champ de saisie du montant à convertir -->
         <label for="montant">Montant</label>
         <input type="text" name="montant" id="montant">
 
-
+        <!-- Affichage du résultat de la conversion -->
         <h2>Résultat</h2>
         <p id="result"></p>
     </form>
+
+    <!-- Script JS contenant la logique de conversion -->
     <script src="script.js"></script>
 </body>
 </html>
