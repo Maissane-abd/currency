@@ -1,3 +1,101 @@
-select, option {
-    width: 200px;
+:root {
+    --bg-color: #f4f7f5;
+    --primary-color: #2e7d32;
+    --accent-color: #81c784;
+    --text-color: #1b1b1b;
+    --border-radius: 12px;
+    --font-main: 'Segoe UI', Roboto, sans-serif;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.3s ease;
+}
+
+form:hover {
+    transform: scale(1.01);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+select,
+input[type="text"] {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: 2px solid var(--accent-color);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    background-color: #f9fdf9;
+    transition: border 0.2s;
+}
+
+select:focus,
+input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+h2 {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+#result {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0.5rem;
+    color: #2e7d32;
+    background: #e8f5e9;
+    padding: 0.8rem;
+    border-radius: var(--border-radius);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    form {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
 }
